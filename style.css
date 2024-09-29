@@ -551,6 +551,18 @@ footer .line-footer p a{
 
 @media screen and (max-width: 1230px ){
 
+
+    body{ 
+        background-image: url(imgs/preto.jpeg);
+        background-color: #000000;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: 100%;
+        background-attachment: fixed;
+        
+        
+    }
+
    .flex{
     margin: 1px;
     flex-direction: column; 
@@ -564,6 +576,7 @@ footer .line-footer p a{
     position: relative;
     top: -950px;
     left: -40px;
+    border-top: NONE;
     
     
    
