@@ -1,0 +1,698 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body{ 
+    background-image: url(imgs/preto.jpeg);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100%;
+    background-attachment: fixed;
+    
+    
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.up button{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #505050;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .2s;
+    margin-left: 1500px;
+    margin-top: 650px;
+    
+    
+   
+    
+     
+}
+
+.flex{
+    display: flex;
+    float: left;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(230, 233, 238, 0.356);
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #ffffff;
+    color: black;
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+
+header{
+    padding: 40px 4%;
+   
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo a{
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+    
+}
+
+header  a{
+    color: #bbbbbb;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.06);
+
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*ESTILO MENU MOBILE*/
+
+.btn-abrir-menu i{
+    color: #fff;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    width: 0%;
+    background-color: rgb(0, 0, 0);
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlew-menu{
+    display: block;
+}
+
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8% ;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+.menu-mobile .btn-fechar i{
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.overlew-menu{
+    background-color: #000000dc;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888888;
+    display: none;
+
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 80px 50px 300px;
+}
+section.topo-do-site p{
+    font-size: 30px;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center ;
+    margin-top: 70px;
+    
+    
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+    
+}
+
+.topo-do-site .txt-topo-site .btn-contato{
+    padding-left: 25%;
+    
+    
+}
+
+.img-topo-site .minha-foto {
+    width: 300px;
+    margin-left: 30px;
+    border-radius: 90px;  
+    line-height: 40px;
+    border: solid 7px #505050; 
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO SOFTSKILL */
+
+section.softskill{
+    padding: 40px 4%;
+    border-top: solid 8px rgb(0, 0, 0);
+    
+}
+
+section.softskill .flex{
+    gap: 60px;
+}
+
+.softskill .softskills-box{
+    color: #fff;
+    padding: 40px;
+   transition: .2s;
+    margin-top: 135px;
+    border-radius: 20px;
+    border: solid 1px;
+}
+
+.softskill .softskills-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff62;
+}
+
+.softskill .softskills-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.img-sobre .segunda-foto{
+    width: 300px;
+    border-radius: 10px;
+}
+
+/*ESTILO DO SOBRE*/
+
+section.sobre{
+    padding: 15px 4%;
+    margin-top: 180px;
+    border-top: solid 8px rgb(0, 0, 0);
+    
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 40px;
+    margin-top: 125px;
+   
+}
+
+.sobre .txt-sobre{
+    color:#fff;
+
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #808080;
+    display: block;
+
+}
+
+.sobre .txt-sobre p{
+    margin: 10px 0;
+    text-align: justify;
+}
+
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #505050;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #ffffff;
+    color: rgb(12, 11, 11);
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+/*ESTILO PORTFOLIO*/
+
+section.portfolio{
+    padding: 20px 4%;
+    margin-left: 80px;
+    margin-top: 230px;
+    border-radius: 10px;
+    border-top: solid 8px rgb(0, 0, 0);
+}
+
+section.portfolio .flex{
+   gap: 250px;
+   margin-top: 90px;
+}
+
+.img-port{
+    width: 260px;
+    height: 460px;
+    background-color: rgb(233, 227, 227);
+    background-size: cover;
+    background-position: 0% 100%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    color: #f2f1f1;
+    border: solid 5px #424242;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3838389d;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.jogo1{
+    position: relative;
+    top: 500px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.jogo2{
+    position: relative;
+    top: 500px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.jogo3{
+    position: relative;
+    top: 500px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*FORMULARIO DE CONTATO*/
+
+section.formulario{
+    padding: 40px 4%;
+    border-top: solid 8px rgb(0, 0, 0);
+    margin-top: 50px;
+
+    
+    
+}
+
+.titulo-media{
+    
+    padding: 30px 4%;
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #00000079;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: rgba(203, 207, 211, 0.356);
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+   
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #ffffff;
+    color: black;
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+/*ESTILO DO RODAPÉ*/
+
+footer{
+    padding: 40px 4%;
+    
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .btn-social{
+    width: 280px;
+    margin-left: 1050px;
+    
+   
+    
+   
+}
+
+footer .line-footer{
+    display: flex;
+    padding: 20px 0;
+}
+
+.borda{
+   border-top: 2px solid #ccc; 
+   width: 1380px;
+}
+footer .logo-footer{
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+}
+
+footer .logo-footer a{
+    color: #bbbbbb;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+footer .logo-footer a:hover{
+    color: #fff;
+    transform: scale(1.06);
+
+}
+
+footer .line-footer p i{
+    color: #fff;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+.success{
+    position: relative;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 1230px ){
+
+   .flex{
+    margin: 1px;
+    flex-direction: column; 
+    
+    
+   }
+
+
+   section.portfolio{
+    padding: 20px 4%;
+    position: relative;
+    top: -950px;
+    left: -40px;
+    
+    
+   
+
+   }
+
+   .img-port .flex{
+    position: relative;
+    
+  
+
+   }
+   .topo-do-site .flex{
+    clear: both;
+   
+    width: 0;
+    position: relative;
+    right: -90px;
+    top: 250px;
+    
+   }
+
+   .line-footer  .flex{
+    width: 70px;
+   }
+
+
+   .txt-topo-site{
+        position: relative;
+        right: 190px;
+     
+       
+   }
+
+   .img-topo-site{
+    position: relative;
+    right: 280px;
+    top: -520px;
+   }
+
+   .img-topo-site .minha-foto {
+    width: 280px;
+    
+}
+
+   .media{
+       
+       padding-top: 1500px;
+       
+   }
+    /*CABEÇALHO*/
+    .menu-desktop, .btn-contato{
+        display: none;
+        
+    }
+
+    .btn-social{
+        position: relative;
+        right: 1055px;
+    }
+
+    section.softskill{
+        display: flex;
+        padding: -40px 4%;
+        position: relative;
+        top: -380px;
+
+    }
+
+
+
+    section.sobre{
+        position: relative;
+        top: -950px;
+        
+    }
+
+    .img-sobre .segunda-foto{
+        
+        position: relative;
+        bottom: 80px;
+    }
+
+    section.softskill{
+        padding: 40px 8%;
+    
+    }
+
+    h2.titulo{
+      
+        font-size: 30px;
+        
+    }
+
+    .btn-enviar{
+        padding-top: 80px ;
+    }
+
+    footer .line-footer{
+        text-align: center;
+        position: relative;
+        left: 60px;
+        width: 1px;
+        padding-top: 20px;
+        gap: 60px;
+}
+
+    .logo-footer{
+        position: relative;
+        left: 70px;
+        gap: 60px;
+    }
+
+    section.formulario{
+        height: 50%;
+        border: solid rgb(0, 0, 0);
+        display: flex;
+        position: relative;
+        bottom: 800px;
+        
+    }
+
+    footer{
+        padding: 40px 4%;
+        
+        position: relative;
+        bottom: 800px;
+        right: 10px;
+    }
+
+
+
+}
